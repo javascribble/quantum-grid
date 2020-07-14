@@ -1,10 +1,13 @@
-import { Quantum, define } from '../../references/quantum.js';
-import { grid } from '../templates/grid.js';
+import { Component } from '../../references/quantum.js';
 
-export class Grid extends Quantum {
+export class Grid extends Component {
     constructor() {
-        super(grid);
+        super();
     }
+
+    static template = document.querySelector('#quantum-grid');
+
+    static attributes = [];
 }
 
-define(Grid);
+customElements.define('quantum-grid', Grid);
