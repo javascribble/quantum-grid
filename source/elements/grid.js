@@ -1,11 +1,12 @@
-import { Component } from '../../references/quantum.js';
+import { Component, template } from '../../references/quantum.js';
+import html from '../templates/grid.js';
 
 export class Grid extends Component {
     constructor() {
         super();
     }
 
-    static template = document.querySelector('#quantum-grid');
+    static template = template(html);
 
     static attributes = [];
 }
