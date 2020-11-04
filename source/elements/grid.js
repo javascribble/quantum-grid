@@ -1,11 +1,12 @@
+import { Component, template, define } from '../import.js';
 import html from '../templates/grid.js';
 
-export class Grid extends quantum.Component {
+export class Grid extends Component {
     constructor() {
         super();
     }
 
-    static template = quantum.template(html);
+    static template = template(html);
 }
 
-quantum.define('quantum-grid', Grid);
+define('quantum-grid', Grid);
