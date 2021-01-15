@@ -1,1 +1,3 @@
-export * from './elements/grid.js';
+import * as grid from './elements/grid.js';
+
+Object.assign(window, grid);
