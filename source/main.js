@@ -1,3 +1,3 @@
-import * as grid from './elements/grid.js';
+import { Grid } from './elements/grid.js';
 
-Object.assign(quantum, grid);
+Quantum.Grid = Grid;
